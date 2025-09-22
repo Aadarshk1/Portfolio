@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aadarsh Kumar | Portfolio</title>
+  <meta name="description" content="Portfolio of Aadarsh Kumar - Web Developer, AI Enthusiast, and Programmer.">
+  <meta name="keywords" content="Aadarsh Kumar, Portfolio, Web Developer, AI, Projects, Skills">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Aadarsh Kumar | Portfolio">
+  <meta property="og:description" content="Portfolio of Aadarsh Kumar - Web Developer, AI Enthusiast, and Programmer.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://your-portfolio-url.com">
+  <meta property="og:image" content="https://your-portfolio-url.com/og-image.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h1 class="logo">Aadarsh Kumar</h1>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <img src="image.jpg" alt="Aadarsh Kumar" class="profile-img" style="width:150px;height:150px;border-radius:50%;object-fit:cover;margin-bottom:1rem;">
+        <h2>Hi, I'm <span>Aadarsh Kumar</span></h2>
+        <p>Recent Graduate | Web Developer | AI Enthusiast</p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am Aadarsh Kumar, a recent graduate with a passion for 
+        programming, artificial intelligence, and web development.
+        I enjoy solving problems and building impactful projects.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill">Java</div>
+        <div class="skill">Python</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">OOPs</div>
+        <div class="skill">AI</div>
+      </div>
+    </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-container">
+      <div class="project-card">
+        <h3>Heart Disease Prediction</h3>
+        <p>Machine learning based project predicting heart disease.</p>
+        <a href="https://github.com/Aadarshk1/Heart-Disease-Prediction" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>E-commerce Website</h3>
+        <p>Online clothing store built with HTML, CSS and JavaScript</p>
+        <a href="https://aadarshk1.github.io/E-commerce-Website/" target ="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Email" style="width:24px;height:24px;vertical-align:middle;margin-right:8px;">
+        Email: <a href="mailto:monuaadarsh2004@gmail.com" target="_blank">monuaadarsh2004@gmail.com</a>
+      </p>
+      <p>
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" style="width:24px;height:24px;vertical-align:middle;margin-right:8px;">
+        LinkedIn: <a href="https://www.linkedin.com/in/aadarsh-kumar-626619289/" target="_blank" rel="noopener">aadarsh-kumar-626619289</a>
+      </p>
+      <p>
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" style="width:24px;height:24px;vertical-align:middle;margin-right:8px;">
+        GitHub: <a href="https://github.com/Aadarshk1" target="_blank" rel="noopener">Aadarshk1</a>
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Aadarsh Kumar | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Responsive navbar toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+      navToggle.setAttribute('aria-expanded', !expanded);
+      navLinks.classList.toggle('nav-open');
+    });
+  </script>
+</body>
+</html>
