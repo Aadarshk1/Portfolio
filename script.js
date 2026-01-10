@@ -27,3 +27,16 @@ window.addEventListener("scroll", revealSection);
 
 // Run on page load too
 revealSection();
+
+// Close mobile nav when a nav link is clicked (improves UX on small screens)
+const navToggle = document.querySelector('.nav-toggle');
+const navLinksEl = document.querySelector('.nav-links');
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    if (navLinksEl && navLinksEl.classList.contains('nav-open')) {
+      navLinksEl.classList.remove('nav-open');
+      if (navToggle) navToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+});
+
